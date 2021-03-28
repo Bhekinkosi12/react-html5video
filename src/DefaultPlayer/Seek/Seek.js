@@ -2,6 +2,7 @@ import React from 'react';
 import styles from './Seek.css';
 
 export default ({ onChange, percentagePlayed, percentageBuffered, className, ariaLabel }) => {
+    
     return (
         <div className={[
             styles.component,
@@ -28,7 +29,9 @@ export default ({ onChange, percentagePlayed, percentageBuffered, className, ari
                     aria-label={ariaLabel}
                     className={styles.input}
                     value={percentagePlayed || 0} />
+
             </div>
-        </div>
+
+</div>
     );
 };
